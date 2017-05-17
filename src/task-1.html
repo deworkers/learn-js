@@ -9,16 +9,24 @@
 
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var text = '';
 
-
+            for (var i = 0; i < 7; i++) {
+                text += '#';
+                console.log(text); 
+            }
+        });
+    </script>
 
 </head>
 <body>
     //= template/head.html
     <div class="wrap">
-        <a href="task-1.html">Задача 1</a><br>
-        <a href="task-2.html">Задача 2</a><br>
-        <a href="task-3.html">Задача 3</a>
+        <h2>Задача 1</h2>
+        <p>смотри консоль</p>
     </div> 
 </body>
 </html>

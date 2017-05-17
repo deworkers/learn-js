@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            for (var i = 0 ; i < 100; i++) {
+
+                if ( i % 3 == 0 ) {
+                    console.log( i + ' Fizz' )
+                } else if (i % 5 == 0 ) {
+                    console.log( i + ' Buzz' )
+                }
+
+                if ( i % 3 == 0 && i % 5 == 0 ) {
+                    console.log( i + ' FizzBuzz' )
+                }
+
+            }
+
+        });
+    </script>
+
+</head>
+<body>
+    //= template/head.html
+    <div class="wrap">
+        <h2>Задача 3</h2>
+        <p></p>
+        <p>смотри консоль</p>
+    </div> 
+</body>
+</html>

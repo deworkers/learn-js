@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var text, symb;
+
+            text = '';
+            symb = '@'; // выводимый символ
+            length = [10, 10]; // размеры поля
+            
+            for (var row = 0; row < length[0]; row++) {
+                if ( row % 2 == 0 ) {
+                    for (var i = 0; i < length[1]; i++) {
+                        if ( i % 2 == 0 ) {
+                            text += ' ';
+                        } else {
+                            text += symb;
+                        }
+                    }
+                } else {
+                    for (var i = 0; i < length[1]; i++) {
+                        if ( i % 2 == 0 ) {
+                            text += symb;
+                        } else {
+                            text += ' ';
+                        }
+                    }
+                }
+                text += '\n';
+            }
+
+            console.log(text);
+        });
+    </script>
+
+</head>
+<body>
+    //= template/head.html
+    <div class="wrap">
+        <h2>Задача 2</h2>
+        <p>смотри консоль</p>
+    </div> 
+</body>
+</html>
