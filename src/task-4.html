@@ -12,12 +12,17 @@
     
     <script type="text/javascript">
         $(document).ready(function () {
-            var text = '';
 
-            for (var i = 0; i < 7; i++) {
-                text += '#';
-                console.log(text); 
+            var min = function(arg1, arg2) {
+                if ( arg1 > arg2 ) {
+                    return arg2;
+                } else {
+                    return arg1;
+                }
             }
+            
+            console.log(min(0, 10));
+            console.log(min(0, -10));
         });
     </script>
 
@@ -25,8 +30,8 @@
 <body>
     //= template/head.html
     <div class="wrap">
-        <h2>Задача 1</h2>
-        <p>Напишите цикл,  выводит такой треугольник:</p>
+        <h2>Задача 4</h2>
+        <p>Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них.</p>
         <p>смотри консоль</p>
     </div> 
 </body>
